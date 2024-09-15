@@ -154,7 +154,7 @@ a {
     <?php
         } else {
             if ($Password === $Confirm_Password) {
-                $insertquery = "INSERT INTO `signup_users`(`Id`, `Full_Name`, `Email`, `Phone_Number`, `Password`, `Confirm_Password`) VALUES ('','$Full_Name','$Email','$Phone_Number','$Epassword','$Econfirmpassword')";
+                $insertquery = "INSERT INTO `signup_users` (`Id`, `Full_Name`, `Email`, `Phone_Number`, `Password`, `Confirm_Password`) VALUES ('','$Full_Name','$Email','$Phone_Number','$Epassword','$Econfirmpassword')";
                 $insert = mysqli_query($conn, $insertquery);
                 if ($insert) {
                     ?>
@@ -169,7 +169,7 @@ a {
             } else {
                 ?>
     <script>
-    alert('Passowrds are not matching');
+    alert('Passwords are not matching');
     </script>
     <?php
             }
